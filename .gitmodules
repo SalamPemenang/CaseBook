@@ -1,0 +1,3 @@
+[submodule "Doraemon"]
+	path = Doraemon
+	url = https://github.com/SalamPemenang/Doraemon.git
