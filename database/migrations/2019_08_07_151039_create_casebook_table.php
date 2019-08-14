@@ -15,7 +15,11 @@ class CreateCasebookTable extends Migration
     {
         Schema::create('casebook', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('');
+            $table->string('kesalahan_siswa');
+            $table->string('sp');
+            $table->string('cttn_perubahan');
+            $table->string('obrolan');
+            $table->string('category_layanan');
             $table->unsignedInteger('id_data_siswa')->nullable();
             $table->foreign('id_data_siswa')->references('id')->on('data_siswa')->onDelete('cascade');
             $table->unsignedInteger('id_user')->nullable();
